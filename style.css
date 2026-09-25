@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #222;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e83e73;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    background: #e83e73;
+    padding: 11px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.nav-btn:hover {
+    background: #d92e65;
+}
+
+/* ADMIN PAGE */
+
+.admin-page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+/* HEADER */
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffe1eb;
+    color: #d92e65;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.admin-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.admin-header p {
+    color: #777;
+    font-size: 17px;
+}
+
+/* CONTAINER */
+
+.admin-container {
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.admin-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.admin-top h2 {
+    font-size: 24px;
+}
+
+.refresh-btn {
+    border: none;
+    background: #e83e73;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.refresh-btn:hover {
+    background: #d92e65;
+}
+
+/* CONFESSION CARD */
+
+.confession-card {
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 18px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.confession-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.confession-top {
+    margin-bottom: 18px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ffe1eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.person strong {
+    display: block;
+    font-size: 16px;
+}
+
+.person small {
+    display: block;
+    color: #999;
+    margin-top: 4px;
+}
+
+/* CONFESSION TEXT */
+
+.confession-text {
+    background: #fff7fa;
+    border-radius: 12px;
+    padding: 18px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-bottom: 18px;
+}
+
+/* BUTTONS */
+
+.confession-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.confession-actions button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    background: #f3f3f3;
+    font-weight: 600;
+}
+
+.confession-actions button:hover {
+    background: #e8e8e8;
+}
+
+.confession-actions .delete-btn {
+    background: #ffe5e5;
+    color: #d62828;
+}
+
+.confession-actions .delete-btn:hover {
+    background: #ffd1d1;
+}
+
+/* EMPTY / LOADING */
+
+.loading,
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    color: #777;
+}
+
+.empty-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.empty-state h3 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .admin-page {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .admin-header h1 {
+        font-size: 30px;
+    }
+
+    .admin-container {
+        padding: 18px;
+    }
+
+    .admin-top {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .confession-actions {
+        flex-direction: column;
+    }
+
+    .confession-actions button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Confessions</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">💌 Confessions</div>
+
+        <a href="#write" class="nav-btn">Write a Confession</a>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="badge">💭 Your story matters</span>
+
+                <h1>
+                    Say what you
+                    <span>feel.</span>
+                </h1>
+
+                <p>
+                    Sometimes words are easier to write than to say.
+                    Share your feelings anonymously and let your heart speak.
+                </p>
+
+                <a href="#write" class="main-btn">
+                    Write Your Confession →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="write-section" id="write">
+
+            <div class="form-container">
+
+                <div class="section-heading">
+                    <span>✦ Anonymous</span>
+
+                    <h2>
+                        Write from your heart.
+                    </h2>
+
+                    <p>
+                        No judgement. No pressure. Just your feelings.
+                    </p>
+                </div>
+
+
+                <form id="confessionForm">
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Your Name
+                            <small>(Optional)</small>
+                        </label>
+
+                        <input type="text" id="name" placeholder="Anonymous" maxlength="50">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="confession">
+                            Your Confession
+                        </label>
+
+                        <textarea id="confession" placeholder="Write what you've been wanting to say..."
+                            maxlength="1000" required></textarea>
+
+                        <div class="character-count">
+                            <span id="charCount">0</span>/1000
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-btn">
+                        Send Confession 💌
+                    </button>
+
+                </form>
+
+
+                <div id="successMessage" class="success-message">
+
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Confession Sent!
+                    </h3>
+
+                    <p>
+                        Your words have been received anonymously.
+                    </p>
+
+                    <button type="button" onclick="writeAnother()">
+                        Write another
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="info-section">
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🔒
+                </div>
+
+                <h3>Anonymous</h3>
+
+                <p>
+                    Share your feelings without revealing who you are.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    💭
+                </div>
+
+                <h3>Be Yourself</h3>
+
+                <p>
+                    Write honestly. Your feelings deserve to be heard.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    ❤️
+                </div>
+
+                <h3>No Judgement</h3>
+
+                <p>
+                    This is a space for thoughts, feelings and emotions.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Made with ❤️ for honest feelings.
+        </p>
+
+        <p>
+            © 2026 Confessions
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
